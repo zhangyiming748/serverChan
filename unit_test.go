@@ -6,10 +6,10 @@ import (
 
 func TestSend(t *testing.T) {
 	msg := &Req{
-		Title:   "通过go请求2次",
-		Desp:    "这是描述",
-		Short:   "这是摘要",
-		Channel: "9",
+		Title:   "任务成功完成",
+		Desp:    "任务共节省了32PB的空间",
+		Short:   "任务摘要", // 看起来不支持
+		Channel: "9",    // 看起来不支持两个通道
 	}
 	key := "xxxx"
 	recive, err := Send(msg, key)
